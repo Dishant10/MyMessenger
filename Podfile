@@ -2,14 +2,12 @@
 # platform :ios, '9.0'
 
 target 'MyMessenger' do
+  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for MyMessenger
 
-pod 'Firebase/Core' '7.2-M1'
-pod 'Firebase/Auth' '7.2-M1'
-pod 'Firebase/Database' '7.2-M1'
 
-
-
+    pod 'FBSDKLoginKit'
+    
 end
