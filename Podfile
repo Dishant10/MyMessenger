@@ -9,5 +9,9 @@ target 'MyMessenger' do
 
 
     pod 'FBSDKLoginKit'
-    
+  
+  #Google sign-in
+  
+  pod 'GoogleSignIn'
+
 end

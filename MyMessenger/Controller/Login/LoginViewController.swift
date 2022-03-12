@@ -262,7 +262,7 @@ extension LoginViewController:LoginButtonDelegate{
                 strongSelf.navigationController?.dismiss(animated: true, completion: nil)
                 
             }
-        }
+        }  
         
         
     }
