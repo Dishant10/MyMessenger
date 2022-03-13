@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33BD2E7827DD081C00B95BDF /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 33BD2E7727DD081C00B95BDF /* GoogleSignIn */; };
 		33E5987C27D32FE000A67559 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E5987B27D32FE000A67559 /* Extensions.swift */; };
 		33F20AF727D4D3EB0024094C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 33F20AF627D4D3EB0024094C /* FirebaseAuth */; };
 		33F20AF927D4D3EB0024094C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 33F20AF827D4D3EB0024094C /* FirebaseDatabase */; };
@@ -29,7 +30,24 @@
 		6F27F837163289037435ADFA /* Pods_MyMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0C14DBF3A549C53DB59CD2 /* Pods_MyMessenger.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		33BD2E8F27DD186B00B95BDF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		33BD2E8027DD186B00B95BDF /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		33BD2E8327DD186B00B95BDF /* AccountAuthenticationModificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAuthenticationModificationViewController.swift; sourceTree = "<group>"; };
+		33BD2E8627DD186B00B95BDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		33BD2E8827DD186B00B95BDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33E5987B27D32FE000A67559 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		33F20AFE27D4D9C30024094C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		33F20B0027D88DCA0024094C /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
@@ -62,12 +80,23 @@
 				33F20AF927D4D3EB0024094C /* FirebaseDatabase in Frameworks */,
 				33F20AF727D4D3EB0024094C /* FirebaseAuth in Frameworks */,
 				6F27F837163289037435ADFA /* Pods_MyMessenger.framework in Frameworks */,
+				33BD2E7827DD081C00B95BDF /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33BD2E8227DD186B00B95BDF /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				33BD2E8327DD186B00B95BDF /* AccountAuthenticationModificationViewController.swift */,
+				33BD2E8527DD186B00B95BDF /* MainInterface.storyboard */,
+				33BD2E8827DD186B00B95BDF /* Info.plist */,
+			);
+			path = Apple;
+			sourceTree = "<group>";
+		};
 		33E5987A27D3226100A67559 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				33FD39F927D09F9500BEC78D /* MyMessenger */,
+				33BD2E8227DD186B00B95BDF /* Apple */,
 				33FD39F827D09F9500BEC78D /* Products */,
 				AAC2A5586E93F908F29FD194 /* Pods */,
 				591FBA0683C6ABE08EA00487 /* Frameworks */,
@@ -169,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				6A0C14DBF3A549C53DB59CD2 /* Pods_MyMessenger.framework */,
+				33BD2E8027DD186B00B95BDF /* AuthenticationServices.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -179,7 +210,6 @@
 				B72724C301157FA851765B8C /* Pods-MyMessenger.debug.xcconfig */,
 				BBB36AAE305BBB1A95F4BA25 /* Pods-MyMessenger.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -195,6 +225,7 @@
 				33FD39F427D09F9500BEC78D /* Frameworks */,
 				33FD39F527D09F9500BEC78D /* Resources */,
 				262622F5A42B689E8D1B5886 /* [CP] Embed Pods Frameworks */,
+				33BD2E8F27DD186B00B95BDF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -206,6 +237,7 @@
 				33F20AF827D4D3EB0024094C /* FirebaseDatabase */,
 				33F20AFA27D4D3EB0024094C /* FirebaseDatabaseSwift-Beta */,
 				33F20AFC27D4D3EB0024094C /* FirebaseMessaging */,
+				33BD2E7727DD081C00B95BDF /* GoogleSignIn */,
 			);
 			productName = MyMessenger;
 			productReference = 33FD39F727D09F9500BEC78D /* MyMessenger.app */;
@@ -236,7 +268,8 @@
 			);
 			mainGroup = 33FD39EE27D09F9500BEC78D;
 			packageReferences = (
-				33F20AF527D4D3EB0024094C /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */,
+				33F20AF527D4D3EB0024094C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				33BD2E7627DD081C00B95BDF /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = 33FD39F827D09F9500BEC78D /* Products */;
 			projectDirPath = "";
@@ -325,6 +358,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		33BD2E8527DD186B00B95BDF /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33BD2E8627DD186B00B95BDF /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		33FD3A0027D09F9500BEC78D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -464,6 +505,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B72724C301157FA851765B8C /* Pods-MyMessenger.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +513,8 @@
 				DEVELOPMENT_TEAM = 2TW7VKY4VF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyMessenger/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a profile picture.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access to photo library for your profile picture.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -495,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BBB36AAE305BBB1A95F4BA25 /* Pods-MyMessenger.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -502,6 +547,8 @@
 				DEVELOPMENT_TEAM = 2TW7VKY4VF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyMessenger/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a profile picture.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access to photo library for your profile picture.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -546,7 +593,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		33F20AF527D4D3EB0024094C /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */ = {
+		33BD2E7627DD081C00B95BDF /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		33F20AF527D4D3EB0024094C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
@@ -557,24 +612,29 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		33BD2E7727DD081C00B95BDF /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33BD2E7627DD081C00B95BDF /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
 		33F20AF627D4D3EB0024094C /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 33F20AF527D4D3EB0024094C /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
+			package = 33F20AF527D4D3EB0024094C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
 		33F20AF827D4D3EB0024094C /* FirebaseDatabase */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 33F20AF527D4D3EB0024094C /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
+			package = 33F20AF527D4D3EB0024094C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
 		};
 		33F20AFA27D4D3EB0024094C /* FirebaseDatabaseSwift-Beta */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 33F20AF527D4D3EB0024094C /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
+			package = 33F20AF527D4D3EB0024094C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseDatabaseSwift-Beta";
 		};
 		33F20AFC27D4D3EB0024094C /* FirebaseMessaging */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 33F20AF527D4D3EB0024094C /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
+			package = 33F20AF527D4D3EB0024094C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseMessaging;
 		};
 /* End XCSwiftPackageProductDependency section */

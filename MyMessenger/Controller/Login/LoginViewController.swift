@@ -12,8 +12,7 @@ import FBSDKCoreKit
 
 class LoginViewController: UIViewController {
     
-    
-    
+   
     private let scrollView: UIScrollView = {
         let scrollView=UIScrollView()
         scrollView.clipsToBounds=true
@@ -74,9 +73,9 @@ class LoginViewController: UIViewController {
         return imageView
     }()
     
+   
+    
     private var FBloginButton=FBLoginButton()
-    
-    
     
     
     override func viewDidLoad() {
@@ -101,7 +100,7 @@ class LoginViewController: UIViewController {
         scrollView.addSubview(passwordField)
         scrollView.addSubview(loginButton)
         scrollView.addSubview(FBloginButton)
-        
+
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -134,8 +133,8 @@ class LoginViewController: UIViewController {
                                    height: 50)
         
         
-        
     }
+    
     
     @objc private func loginButtonTapped(){
         guard let email = emailField.text,let password = passwordField.text,!email.isEmpty,!password.isEmpty,password.count>=6 else{

@@ -10,8 +10,9 @@ import UIKit
 import FBSDKCoreKit
 import Firebase
 
+
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate{
 func application(
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
@@ -21,8 +22,9 @@ func application(
         didFinishLaunchingWithOptions: launchOptions
     )
     
+    
     FirebaseApp.configure()
-
+    
     return true
 }
       
@@ -37,5 +39,7 @@ func application(
         sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
         annotation: options[UIApplication.OpenURLOptionsKey.annotation]
     )
+    
+   return true
 }
 }

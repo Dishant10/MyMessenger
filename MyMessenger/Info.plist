@@ -2,10 +2,34 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Please allow access to photo library for your profile picture.</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Please allow access to take a profile picture.</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb527586878977482</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.988938106060-mtmmuj4ig016jhc8frr0frico42sdo43</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>527586878977482</string>
+	<key>FacebookClientToken</key>
+	<string>fd714e5cbabdd15bbaf9cc73ffa1e1a5</string>
+	<key>FacebookDisplayName</key>
+	<string>MyMessenger</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+	</array>
 	<key>NSAppleScriptEnabled</key>
 	<false/>
 	<key>UIApplicationSceneManifest</key>
@@ -17,37 +41,17 @@
 			<key>UIWindowSceneSessionRoleApplication</key>
 			<array>
 				<dict>
+					<key></key>
+					<string></string>
 					<key>UISceneConfigurationName</key>
 					<string>Default Configuration</string>
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
 					<string>Main</string>
-					<key></key>
-					<string></string>
 				</dict>
 			</array>
 		</dict>
 	</dict>
-    <key>CFBundleURLTypes</key>
-    <array>
-      <dict>
-      <key>CFBundleURLSchemes</key>
-      <array>
-        <string>fb527586878977482</string>
-      </array>
-      </dict>
-    </array>
-    <key>FacebookAppID</key>
-    <string>527586878977482</string>
-    <key>FacebookClientToken</key>
-    <string>fd714e5cbabdd15bbaf9cc73ffa1e1a5</string>
-    <key>FacebookDisplayName</key>
-    <string>MyMessenger</string>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-      <string>fbapi</string>
-      <string>fb-messenger-share-api</string>
-    </array>
 </dict>
 </plist>

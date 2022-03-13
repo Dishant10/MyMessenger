@@ -25,7 +25,7 @@ extension DatabaseManager{
         safeEmail=safeEmail.replacingOccurrences(of: "@", with: "-")
         
         database.child(safeEmail).observeSingleEvent(of: .value) { snapshot in
-            guard let foundEmail=snapshot.value as? String else{
+            guard (snapshot.value as? String) != nil else{
                 completion(false)
                 return
             }
